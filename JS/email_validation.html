@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Email validation</title>
+		 <script type="text/javascript">
+		 function validate()
+		{
+			var mail=document.getElementById("email").value
+			var mail_format=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+			if(mail.match( mail_format))
+			{
+				alert("valid email address");
+				
+			}
+			else
+			{
+			alert("You have entered an invalid email address!");
+			}
+		}
+		</script>
+	</head>
+	<body>
+				<label >Enter Your Email</label>
+				<input type="text" name="email" id="email"><br>
+				<input type="submit" onclick="validate()">
+	</body>
+</html>	
